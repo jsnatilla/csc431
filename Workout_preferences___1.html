@@ -555,6 +555,10 @@
 		left: 119px;
 		top: 75px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___2.html;
+		cursor: pointer;
 	}
 	#Skip_b {
 		left: 0px;
@@ -626,6 +630,10 @@
 		left: 156px;
 		top: 708px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___2.html;
+		cursor: pointer;
 	}
 	#Rectangle_1537 {
 		fill: rgba(218,164,4,1);
@@ -4036,7 +4044,7 @@ window.application = new Application();
 		<div id="Select_types_of_workouts_you_e">
 			<span>Select types of workouts you enjoy</span>
 		</div>
-		<div id="Nav_Bar_Title_b" class="Nav_Bar_Title">
+		<div onclick="application.goToTargetView(event)" id="Nav_Bar_Title_b" class="Nav_Bar_Title">
 			<div id="Skip_b">
 				<span>Skip</span>
 			</div>
@@ -4060,7 +4068,7 @@ window.application = new Application();
 			<rect id="Rectangle_1538_cb" rx="0" ry="0" x="0" y="0" width="428" height="328">
 			</rect>
 		</svg>
-		<div id="Group_161">
+		<div onclick="application.goToTargetView(event)" id="Group_161">
 			<svg class="Rectangle_1537">
 				<rect id="Rectangle_1537" rx="22" ry="22" x="0" y="0" width="116" height="44">
 				</rect>

@@ -32,6 +32,16 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
 	#Group_160 {
 		position: absolute;
 		width: 13.575px;
@@ -39,6 +49,10 @@
 		left: 31.667px;
 		top: 55.076px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___2.html;
+		cursor: pointer;
 	}
 	#Group_110 {
 		position: absolute;
@@ -738,6 +752,10 @@
 		overflow: visible;
 		width: 59px;
 		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___2.html;
+		cursor: pointer;
 		text-align: center;
 		font-family: Arial;
 		font-style: normal;
@@ -803,6 +821,10 @@
 		height: 104px;
 		left: 16px;
 		top: 295px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___3.html;
+		cursor: pointer;
 	}
 	#Dance_Workout {
 		left: 29px;
@@ -1020,6 +1042,10 @@
 		left: 188px;
 		top: 296px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___3.html;
+		cursor: pointer;
 	}
 	#Colorful_Heart_Candies_and_Pol_cx {
 		position: absolute;
@@ -4185,7 +4211,7 @@ window.application = new Application();
 </head>
 <body>
 <div id="Workout_preferences__4">
-	<div id="Group_160">
+	<div onclick="application.goToTargetView(event)" id="Group_160">
 		<div id="Group_110">
 			<svg class="Line_34" viewBox="-1.25 -1.25 8.337 8.337">
 				<path id="Line_34" d="M 1.067199718818301e-06 7.086984634399414 C -0.3199026882648468 7.086984634399414 -0.6398077011108398 6.96494722366333 -0.8838877081871033 6.720872402191162 C -1.372037649154663 6.232712268829346 -1.372037649154663 5.4412522315979 -0.8838877081871033 4.953102111816406 L 4.953102111816406 -0.8838877081871033 C 5.441252708435059 -1.372037649154663 6.232712268829346 -1.372037649154663 6.720872402191162 -0.8838877081871033 C 7.209022521972656 -0.3957276940345764 7.209022521972656 0.3957323133945465 6.720872402191162 0.8838823437690735 L 0.8838823437690735 6.720872402191162 C 0.6398073434829712 6.96494722366333 0.3199048042297363 7.086984634399414 1.067199718818301e-06 7.086984634399414 Z">
@@ -4368,7 +4394,7 @@ window.application = new Application();
 		<ellipse id="Ellipse_44" rx="10" ry="10" cx="10" cy="10">
 		</ellipse>
 	</svg>
-	<div id="My_Plans">
+	<div onclick="application.goToTargetView(event)" id="My_Plans">
 		<span>My Plans</span>
 	</div>
 	<svg class="Rectangle_1535">
@@ -4385,7 +4411,7 @@ window.application = new Application();
 			<stop offset="0" stop-color="#c6dbdc" stop-opacity="0"></stop>
 			<stop offset="1" stop-color="#a9b9b9" stop-opacity="1"></stop>
 		</linearGradient>
-		<rect id="Rectangle_1181_ce" rx="12" ry="12" x="0" y="0" width="159" height="98">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_1181_ce" rx="12" ry="12" x="0" y="0" width="159" height="98">
 		</rect>
 	</svg>
 	<div id="Dance_Workout">
@@ -4444,7 +4470,7 @@ window.application = new Application();
 			<span>Body Measurements</span>
 		</div>
 	</div>
-	<div id="Group_147">
+	<div onclick="application.goToTargetView(event)" id="Group_147">
 		<img id="Colorful_Heart_Candies_and_Pol_cx" src="Colorful_Heart_Candies_and_Pol_cx.png" srcset="Colorful_Heart_Candies_and_Pol_cx.png 1x, Colorful_Heart_Candies_and_Pol_cx@2x.png 2x">
 			
 		<svg class="Rectangle_1181_cz">

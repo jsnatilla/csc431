@@ -201,6 +201,10 @@
 		left: 92.836px;
 		top: 76.146px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___1.html;
+		cursor: pointer;
 	}
 	#Skip {
 		left: 0px;
@@ -291,9 +295,6 @@
 	}
 	#Rectangle_1537 {
 		fill: rgba(218,164,4,1);
-		--web-animation: fadein 0.30000001192092896s ease-out;
-		--web-action-type: page;
-		--web-action-target: Workout_preferences__1.html;
 	}
 	.Rectangle_1537 {
 		position: absolute;
@@ -302,6 +303,10 @@
 		height: 44px;
 		left: 156px;
 		top: 764px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Workout_preferences___1.html;
+		cursor: pointer;
 	}
 	#Next {
 		left: 195px;
@@ -3571,7 +3576,7 @@ window.application = new Application();
 	<div id="How_often_would_you_like_to_ex">
 		<span>How often would you like to exercise?</span>
 	</div>
-	<div id="Nav_Bar_Title" class="Nav_Bar_Title">
+	<div onclick="application.goToTargetView(event)" id="Nav_Bar_Title" class="Nav_Bar_Title">
 		<div id="Skip">
 			<span>Skip</span>
 		</div>
@@ -3596,7 +3601,7 @@ window.application = new Application();
 		</div>
 	</div>
 	<svg class="Rectangle_1537">
-		<rect id="Rectangle_1537" rx="22" ry="22" x="0" y="0" width="116" height="44">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_1537" rx="22" ry="22" x="0" y="0" width="116" height="44">
 		</rect>
 	</svg>
 	<div id="Next">
