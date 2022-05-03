@@ -535,16 +535,47 @@
 		top: 96px;
 		overflow: visible;
 	}
+	.username::placeholder {
+  		color: #6c6c6c99;
+	}
+
+	.username {
+ 		background-color: transparent;
+		  border: 0;
+		  height: 20px;
+		  left: 121px;
+		  letter-spacing: 0;
+		  line-height: 15px;
+		  opacity: 0.51;
+		  padding: 0;
+		  position: fixed;
+		  top: 273px;
+		  white-space: nowrap;
+		  width: 65px;
+		  z-index: 10;	
+}
+
+.password::placeholder {
+  		color: #6c6c6c99;
+	}
+
+	.password {
+ 		background-color: transparent;
+		  border: 0;
+		  height: 20px;
+		  left: 121px;
+		  letter-spacing: 0;
+		  line-height: 15px;
+		  opacity: 0.51;
+		  padding: 0;
+		  position: fixed;
+		  top: 273px;
+		  white-space: nowrap;
+		  width: 65px;
+		  z-index: 10;	
+}
 </style>
 <script id="applicationScript">
-///////////////////////////////////////
-// INITIALIZATION
-///////////////////////////////////////
-
-/**
- * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
- * Code subject to change.
- **/
 
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
 
@@ -3509,102 +3540,8 @@ window.application = new Application();
 			</path>
 		</svg>
 	</div>
-	form {
-  border: 3px solid #f1f1f1;
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
-
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
-}
-</style>
-
 	<div id="Login">
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+		<span>Login</span>
 	</div>
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="14.5" ry="14.5" x="0" y="0" width="217" height="29">
@@ -3615,10 +3552,22 @@ span.psw {
 		</rect>
 	</svg>
 	<div id="username">
-		<span>username</span>
+		 <input
+    class="usernamecandara-regular-normal-dove-gray-15px"
+    name="username9"
+    placeholder="username"
+    type="text"
+    required=""
+  />
 	</div>
 	<div id="password">
-		<span>password</span>
+		 <input
+    class="passwordcandara-regular-normal-dove-gray-15px"
+    name="password9"
+    placeholder="password"
+    type="text"
+    required=""
+  />
 	</div>
 	<div id="Group_166">
 		<svg class="Rectangle_3">
