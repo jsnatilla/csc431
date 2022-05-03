@@ -2835,14 +2835,7 @@ var Application = function() {
 		}
 	}
 
-	/**
-	 * Adds a view
-	 * @param {HTMLElement} view view element
-	 * @param {String} id id of view element
-	 * @param {CSSRule} cssRule of view element
-	 * @param {CSSMediaRule} mediaRule media rule of view element
-	 * @param {String} stateName name of state if applicable
-	 **/
+	
 	self.addView = function(view, viewId, cssRule, mediaRule, stateName) {
 		var viewData = {};
 		viewData.name = viewId;
@@ -2865,12 +2858,6 @@ var Application = function() {
 		return false;
 	}
 
-	/**
-	 * Go to view by id. Views are added in addView()
-	 * @param {String} id id of view in current
-	 * @param {Boolean} maintainPreviousState if true then do not hide other views
-	 * @param {String} parent id of parent view
-	 **/
 	self.goToView = function(id, maintainPreviousState, parent) {
 		var state = self.viewsDictionary[id];
 
@@ -2889,9 +2876,6 @@ var Application = function() {
 		}
 	}
 
-	/**
-	 * Go to the view in the event targets CSS variable
-	 **/
 	self.goToTargetView = function(event) {
 		var button = event.currentTarget;
 		var buttonComputedStyles = getComputedStyle(button);
@@ -3526,8 +3510,13 @@ window.application = new Application();
 		<rect id="Rectangle_1165" rx="8" ry="8" x="0" y="0" width="321" height="38">
 		</rect>
 	</svg>
-	<div id="What_is_your_email">
-		<span>What is your email?</span>
+	<div id="username"> //this is for the email
+	<input class="usernamecandara-regular-normal-dove-gray-15px"
+   	 name="username9"
+   	 placeholder="email"
+    	type="text"
+    	required=""
+ 	 />
 	</div>
 	<svg class="Rectangle_1171">
 		<rect id="Rectangle_1171" rx="8" ry="8" x="0" y="0" width="321" height="38">
@@ -3538,7 +3527,12 @@ window.application = new Application();
 		</rect>
 	</svg>
 	<div id="Repeat_Password">
-		<span>Repeat Password</span>
+		<input class="usernamecandara-regular-normal-dove-gray-15px"
+	 name="username9"
+   	 placeholder="Repeat Password"
+    	type="text"
+    	required=""
+ 	 />
 	</div>
 	<svg class="Rectangle_1173">
 		<rect onclick="application.goToTargetView(event)" id="Rectangle_1173" rx="22" ry="22" x="0" y="0" width="116" height="44">
@@ -3548,7 +3542,12 @@ window.application = new Application();
 		<span>Back</span>
 	</div>
 	<div id="Password">
-		<span>Password</span>
+	<input class="usernamecandara-regular-normal-dove-gray-15px"
+	 name="username9"
+   	 placeholder="Password"
+    	type="text"
+    	required=""
+ 	 />
 	</div>
 	<img id="Diseo_sin_ttulo_37" src="Diseo_sin_ttulo_37.png" srcset="Diseo_sin_ttulo_37.png 1x, Diseo_sin_ttulo_37@2x.png 2x">
 		
